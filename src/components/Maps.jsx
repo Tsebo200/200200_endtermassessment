@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import BarGraph from './Charts/BarGraph';
 import LineGraph from './Charts/LineGraph';
 import BarGraphTwo from './Charts/BarGraphTwo';
@@ -23,6 +24,7 @@ function Maps() {
     </div>
 
   {/* <Button/> */}
+    <Button variant="light">Show/Hide</Button>
     <div className="spacer"></div>
    
     <div className='bar-chart-two-box'>
