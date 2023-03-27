@@ -2,7 +2,7 @@ import React from 'react'
 import {Bar} from 'react-chartjs-2';
 import { UserData } from '../../Data/Data';
 
-import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, ArcElement, Tooltip, Legend, CategoryScale, BarElement } from 'chart.js';
+import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, Tooltip, Legend, CategoryScale, BarElement } from 'chart.js';
 ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 
@@ -40,7 +40,7 @@ function BarGraph() {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
+        label: 'My Investments',
 
         // data: [59, 80, 81, 56, 55, 40],
         data: UserData.map((data)  => data.userGain),

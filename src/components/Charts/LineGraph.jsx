@@ -10,6 +10,8 @@ import { UserData } from '../../Data/Data';
 
 function LineGraph() {
 
+ 
+
     ChartJS.register(
         CategoryScale,
         LinearScale,
@@ -32,15 +34,17 @@ function LineGraph() {
           },
         },
       };
+      // const investorsData = 
       
-      const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-      
+      const labels = ['2016', '2017', '2018', '2019', '2020'];
+      // let myYear = UserData.map(labels);
        const data = {
         labels,
         datasets: [
           {
-            label: 'Dataset 1',
-            data: ,
+            // label: myYear.data.year,
+            label: 'My Investments',
+            data: UserData.map((data)  => data.Revenue),
             borderColor: 'rgb(255, 99, 132)',
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
           },
