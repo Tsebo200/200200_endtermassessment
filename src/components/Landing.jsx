@@ -18,25 +18,43 @@ function Landing() {
       
         console.log(data)
         const imageUrl = res.data.message
+        // console.log()
+        setRandomImage(imageUrl)
     })
     .catch((err)=>{
         console.log(err)
     })
 }, '')
+
+const randomImg = () => {
+
+
+    axios.get('https://dog.ceo/api/breeds/image/random')
+    .then((res)=>{
+        let data = res.data.message
+      
+        console.log(data)
+        const imageUrl = res.data.message
+        // console.log()
+        setRandomImage(imageUrl)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+
+
+}
 // setRandomImage = <img src={{randomImage}} width="500px" height="500px"/>
 
   return (   
+
     <div className="background">
     <h1>Landing Page</h1>
     {/* <Link to="/maps"><p>Landing</p></Link> */}
     {/* <div className="image-container">{randomImage}</div> */}
-    <center><img src= "https://images.dog.ceo/breeds/pug/n02110958_13439.jpg" width="400px" height="300px" alt='image of dog'></img></center>
-    <center><Button variant="light">Randomise</Button></center>
+    <center><img src= {randomImage} width="400px" height="300px" alt='image of dog'></img></center>
+    <center><Button variant="light" onClick={randomImg}>Randomise</Button></center>
     </div>
-
-
-
-
   )
 }
 
