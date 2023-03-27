@@ -8,6 +8,8 @@ ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 function BarGraph() {
 
+  // const investorsData = UserData.map(data)         Tried to dynamically load content
+
     ChartJS.register(
         CategoryScale,
         LinearScale,
@@ -32,22 +34,19 @@ function BarGraph() {
     },
   };
   
-  const labels = ['Jan', 'February', 'March', 'April', 'May', 'June', 'July'];
+  const labels = ['2016', '2017', '2018', '2019', '2020'];
   
   const data = {
     labels,
     datasets: [
       {
         label: 'Dataset 1',
+
         // data: [59, 80, 81, 56, 55, 40],
         data: UserData.map((data)  => data.userGain),
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
-      {
-        label: 'Dataset 2',
-        data: [59, 80, 81, 56, 55, 40],
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
+   
     ],
   };
 
