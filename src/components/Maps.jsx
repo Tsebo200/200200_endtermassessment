@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BarGraph from './Charts/BarGraph';
 import LineGraph from './Charts/LineGraph';
+import BarGraphTwo from './Charts/BarGraphTwo';
 
 function Maps() {
   return (
@@ -9,6 +10,7 @@ function Maps() {
    
     <Link to="/"><p>Maps</p></Link>
      <BarGraph/>
+     <BarGraphTwo/>
      <LineGraph/>
     </>
  

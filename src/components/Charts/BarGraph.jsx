@@ -40,7 +40,7 @@ function BarGraph() {
     labels,
     datasets: [
       {
-        label: 'My Investments',
+        label: 'My Gains',
 
         // data: [59, 80, 81, 56, 55, 40],
         data: UserData.map((data)  => data.userGain),

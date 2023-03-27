@@ -6,9 +6,48 @@ ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 
 function BarGraphTwo() {
-  return (
-    <div>BarGraphTwo</div>
-  )
+
+    ChartJS.register(
+        CategoryScale,
+        LinearScale,
+        BarElement,
+        Title,
+        Tooltip,
+        Legend
+      );
+
+
+  
+   const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Bar Chart',
+      },
+    },
+  };
+  
+  const labels = ['2016', '2017', '2018', '2019', '2020'];
+  
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: 'My Loss',
+        data: UserData.map((data)  => data.userLost),
+        backgroundColor: 'red',
+      },
+   
+    ],
+  };
+
+
+
+  return <Bar options={options} data={data}/>;
 }
 
 export default BarGraphTwo
