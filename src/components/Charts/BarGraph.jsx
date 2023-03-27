@@ -1,14 +1,13 @@
 import React from 'react'
 import {Bar} from 'react-chartjs-2';
-// import '../Data/Data';
+import { UserData } from '../../Data/Data';
+
 import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, ArcElement, Tooltip, Legend, CategoryScale, BarElement } from 'chart.js';
 ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
 
 function BarGraph() {
 
-
-  
     ChartJS.register(
         CategoryScale,
         LinearScale,
@@ -40,7 +39,8 @@ function BarGraph() {
     datasets: [
       {
         label: 'Dataset 1',
-        data: [59, 80, 81, 56, 55, 40],
+        // data: [59, 80, 81, 56, 55, 40],
+        data: UserData.map((data)  => data.userGain),
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
       {
@@ -51,9 +51,8 @@ function BarGraph() {
     ],
   };
 
-  return (
-    <Bar options={options} data={data}/>
-  )
+  return <Bar options={options} data={data}/>
+  
 }
 
 export default BarGraph
