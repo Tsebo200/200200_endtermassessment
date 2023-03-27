@@ -26,6 +26,7 @@ function Landing() {
 
   return (   
     <>
+
     <h1>Landing Page</h1>
     <Link to="/maps"><p>Landing</p></Link>
     {/* <div className="image-container">{randomImage}</div> */}
