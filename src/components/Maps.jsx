@@ -1,8 +1,11 @@
-import React from 'react'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../Data/Data';
+import {Bar}
 function Maps() {
   return (
-    <div>Maps</div>
+    <Link to="/"><p>Maps</p></Link>
+
   )
 }
 
