@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import { Button } from 'react-bootstrap';
 import '../styles/styles.sass';
 
 function Landing() {
@@ -28,10 +28,10 @@ function Landing() {
   return (   
     <div className="background">
     <h1>Landing Page</h1>
-    <Link to="/maps"><p>Landing</p></Link>
+    {/* <Link to="/maps"><p>Landing</p></Link> */}
     {/* <div className="image-container">{randomImage}</div> */}
-    <img src= "https://images.dog.ceo/breeds/pug/n02110958_13439.jpg" width="100px" height="100px" alt='image of dog'></img>
-    <Button/>
+    <center><img src= "https://images.dog.ceo/breeds/pug/n02110958_13439.jpg" width="400px" height="300px" alt='image of dog'></img></center>
+    <center><Button variant="light">Randomise</Button></center>
     </div>
 
 
