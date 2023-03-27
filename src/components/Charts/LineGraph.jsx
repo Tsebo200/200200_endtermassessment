@@ -45,8 +45,8 @@ function LineGraph() {
             // label: myYear.data.year,
             label: 'My Revenue',
             data: UserData.map((data)  => data.Revenue),
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            borderColor: '#30009C',
+            backgroundColor: '#BB86FC',
           },
        
         ],

@@ -39,7 +39,7 @@ function BarGraphTwo() {
       {
         label: 'My Loss',
         data: UserData.map((data)  => data.userLost),
-        backgroundColor: 'red',
+        backgroundColor: '#DBB2FF',
       },
    
     ],

@@ -1,8 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
+import '../src/styles/styles.sass';
+import './App.css';
 import Maps from './components/Maps';
 import Landing from './components/Landing';
 import NavBar from './components/NavBar';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

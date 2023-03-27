@@ -44,7 +44,7 @@ function BarGraph() {
 
         // data: [59, 80, 81, 56, 55, 40],
         data: UserData.map((data)  => data.userGain),
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+        backgroundColor: '#6200EE',
       },
    
     ],
