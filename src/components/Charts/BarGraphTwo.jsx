@@ -26,7 +26,7 @@ function BarGraphTwo() {
       },
       title: {
         display: true,
-        text: 'Chart.js Bar Chart',
+        text: 'Bitcoin Investments',
       },
     },
   };
@@ -37,7 +37,7 @@ function BarGraphTwo() {
     labels,
     datasets: [
       {
-        label: 'My Loss',
+        label: 'My Losses',
         data: UserData.map((data)  => data.userLost),
         backgroundColor: '#DBB2FF',
       },

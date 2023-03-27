@@ -30,7 +30,7 @@ function LineGraph() {
           },
           title: {
             display: true,
-            text: 'Chart.js Line Chart',
+            text: 'My Bank Account',
           },
         },
       };

@@ -29,7 +29,7 @@ function BarGraph() {
       },
       title: {
         display: true,
-        text: 'Chart.js Bar Chart',
+        text: 'My Forex Gains',
       },
     },
   };
