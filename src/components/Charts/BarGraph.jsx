@@ -1,6 +1,6 @@
 import React from 'react'
 import {Bar} from 'react-chartjs-2';
-import '../Data/Data';
+// import '../Data/Data';
 import { Chart as ChartJS, LineController, LineElement, PointElement, LinearScale, Title, ArcElement, Tooltip, Legend, CategoryScale, BarElement } from 'chart.js';
 ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title);
 
